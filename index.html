@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preload" as="image" href="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/cover.webp">
+<!-- <link rel="preload" as="image" href="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/cover.webp">
 <link rel="preload" as="image" href="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/1.webp">
 <link rel="preload" as="image" href="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/2.webp">
 <link rel="preload" as="image" href="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/3.webp">
@@ -66,7 +66,7 @@
 <link rel="preload" as="image" href="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/bt/13.webp">
 <link rel="preload" as="image" href="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/bt/14.webp">
 <link rel="preload" as="image" href="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/bt/15.webp">
-<link rel="preload" as="image" href="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/bt/16.webp">
+<link rel="preload" as="image" href="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/bt/16.webp"> -->
 
 
 
@@ -271,7 +271,7 @@ COIN SLOT
 }
 
 .coin-slot:hover{
-  cursor:url("https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/coin.png") 24 24, pointer;
+  cursor:url("coin.png") 24 24, pointer;
 }
 
 /* =========================
@@ -299,7 +299,7 @@ COIN EFFECT
   width:28px;
   height:28px;
 
-  background:url("https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/coin.png")
+  background:url("coin.png")
   no-repeat center/contain;
 
   pointer-events:none;
@@ -422,7 +422,7 @@ AUTO ID TRAINING
     <div class="label">Industry</div>
 
     <img id="industryImg"
-    src="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/cover.webp">
+    src="industry/cover.webp">
   </div>
 
   <!-- JOB -->
@@ -430,7 +430,7 @@ AUTO ID TRAINING
     <div class="label">Job Role</div>
 
     <img id="jobImg"
-    src="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/cover.webp">
+    src="jobrole/cover.webp">
   </div>
 
   <!-- FUNCTION -->
@@ -444,7 +444,7 @@ AUTO ID TRAINING
       </div>
 
       <img id="funcImg"
-      src="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/sr/cover.webp">
+      src="sr/cover.webp">
 
     </div>
 
@@ -497,17 +497,17 @@ AUDIO
 ========================= -->
 
 <audio id="bgm" preload="auto" loop>
-  <source src="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/sounds/bgm.mp3"
+  <source src="sounds/bgm.mp3"
   type="audio/mpeg">
 </audio>
 
 <audio id="spinSound" preload="auto">
-  <source src="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/sounds/spin.mp3"
+  <source src="sounds/spin.mp3"
   type="audio/mpeg">
 </audio>
 
 <audio id="resultSound" preload="auto">
-  <source src="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/sounds/result.mp3"
+  <source src="sounds/result.mp3"
   type="audio/mpeg">
 </audio>
 
@@ -524,38 +524,38 @@ let spinning = false;
 ARRAYS
 ========================= */
 const fallbackImg =
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/cover.webp";
+"industry/cover.webp";
 
 const industry = [
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/1.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/2.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/3.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/4.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/5.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/6.webp"
+"industry/1.webp",
+"industry/2.webp",
+"industry/3.webp",
+"industry/4.webp",
+"industry/5.webp",
+"industry/6.webp"
 ];
 
 const job = [
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/1.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/2.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/3.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/4.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/5.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/6.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/7.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/8.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/9.webp",
-"https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/10.webp",
+"jobrole/1.webp",
+"jobrole/2.webp",
+"jobrole/3.webp",
+"jobrole/4.webp",
+"jobrole/5.webp",
+"jobrole/6.webp",
+"jobrole/7.webp",
+"jobrole/8.webp",
+"jobrole/9.webp",
+"jobrole/10.webp",
 ];
 
 const sr = Array.from(
 {length:26},
-(_,i)=>`https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/sr/${i+1}.webp`
+(_,i)=>`sr/${i+1}.webp`
 );
 
 const bt = Array.from(
 {length:16},
-(_,i)=>`https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/bt/${i+1}.webp`
+(_,i)=>`bt/${i+1}.webp`
 );
 
 /* =========================
@@ -615,9 +615,9 @@ srBtn.onclick = ()=>{
 
     /* reset back to cover */
 
-  industryImg.src="https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/cover.webp";
-  jobImg.src = "https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/cover.webp";
-  funcImg.src = "https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/sr/cover.webp";
+  industryImg.src="industry/cover.webp";
+  jobImg.src = "jobrole/cover.webp";
+  funcImg.src = "sr/cover.webp";
   
   funcLabel.innerText =
   "SR Function";
@@ -633,9 +633,9 @@ btBtn.onclick = ()=>{
   
     /* reset back to cover */
 
-  industryImg.src = "https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/cover.webp";
-  jobImg.src = "https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/cover.webp";
-  funcImg.src = "https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/bt/cover.webp";
+  industryImg.src = "industry/cover.webp";
+  jobImg.src = "jobrole/cover.webp";
+  funcImg.src = "bt/cover.webp";
 
   funcLabel.innerText =
   "BT Function";
@@ -878,9 +878,9 @@ backBtn.onclick = ()=>{
 
   /* reset back to cover */
 
-  industryImg.src = "https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/industry/cover.webp";
-  jobImg.src = "https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/jobrole/cover.webp";
-  funcImg.src = "https://raw.githubusercontent.com/houstoncheah/AUTO-ID-DEMO-TRAINING-CARD/main/sr/cover.webp";
+  industryImg.src = "industry/cover.webp";
+  jobImg.src = "jobrole/cover.webp";
+  funcImg.src = "sr/cover.webp";
 
   resultText.innerText =
   "Insert coin to start";
