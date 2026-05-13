@@ -100,13 +100,16 @@ MACHINE
 ========================= */
 
 .machine{
-  width: min(1400px, 95vw);
-  max-width: 1400px;
-  padding: 30px;
-  border-radius: 35px;
-  background: white;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-  position: relative;
+  width:1400px;
+  padding:30px;
+  border-radius:35px;
+
+  background:white;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.12);
+
+  position:relative;
 }
 
 .title{
@@ -162,9 +165,19 @@ SLOTS
 }
 
 .slot{
-  width: min(420px, 90vw);
-  height: auto;
-  aspect-ratio: 420 / 540;
+  width:420px;
+  height:540px;
+
+  background:white;
+
+  border-radius:25px;
+
+  overflow:hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.12);
+
+  position:relative;
 }
 
 .slot img{
